@@ -24,60 +24,31 @@ h2 {
 p { 
     position: sticky;
     color: rgb(255, 255, 255); 
-    font-family: ‘Helvetica Neue’, sans-serif; 
-    font-size: 14px; 
-    line-height: 10px; 
-    margin: 10 0 24px; 
+    font-family: ‘Helvetica Neue’, sans-serif;     
+    font-size: 20px;
     text-align: justify; 
     text-justify: inter-word; 
-    font-size: 5vh;
-    line-height: 2;
     
-    border: 5;
+    height: 100pxs;
 }
 
-ol {
-    height: 50vh;
-    columns: 20vw;
-}
 
+.lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    font-size: 40px;
+}
 
 li {
-    line-height: 1.8;
-    text-align: center;
-    background: #D2ECF9;
-    list-style-type: none; 
-    height: 10vh;
-    font-size: 30px;
-    font-family: system-ui;
- 
+    padding: 20px;
+    margin: 10px;
 }
 
-.category-list {
-
-    flex-direction: column; 
-    columns: 20vw;
-    
-}
-  
-.category-list li {
-    page-break-inside: avoid;
-    break-inside: avoid;
-    columns: 20vw;
-}
-
-
-ul {
-    display: inline;
-    margin-left: 0; /* Отступ слева в браузере IE и Opera */
-    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
-}
-
-/*class*/
-.base__body {
-    margin: 0;
-    padding: 0%;
-    display: block;
+li::marker{
+    padding: 10px;
+    margin: 10px;
 }
 
 footer {
@@ -94,7 +65,7 @@ footer {
 
 .logo_main {
 
-    color: #111; 
+    color: #D2ECF9; 
     font-family: ‘Helvetica Neue’, sans-serif; 
     
     font-size: 10vw;
@@ -111,19 +82,20 @@ footer {
 
 .logo-support {
     color: #111; 
+    flex-wrap: warp;
     font-family: ‘Helvetica Neue’, sans-serif; 
     font-size: 4vw;
 }
 
-/*второй экран, ВЫ НАУЧИТЕСЬ*/
 .second_screen {
+    padding: 0%;
+    margin: 0%;
     background-color: #1F5F8B;
-    height: 100vh;
 }
 
 .third_screen {
     background-color: #1891AC;
-    height: 100vh;
+
 }
 
 .fifth_screen {
